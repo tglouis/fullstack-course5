@@ -12,7 +12,7 @@ function LunchCheckController($scope) {
 
   $scope.checkLunch = function() {
     var lunchItemsEntry = $scope.lunchEntry;
-    var lunchItems = lunchItemsEntry.split(',').filter(item => item != "");
+    var lunchItems = lunchItemsEntry.split(',').filter(item => item.trim() != "");
     var lunchItemCount = lunchItems.length;
     console.log(lunchItems);
 
